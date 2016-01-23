@@ -1,1 +1,1 @@
-# chef-symfony-stack
+# chef-symfony
