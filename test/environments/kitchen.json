@@ -1,0 +1,22 @@
+{
+  "name": "kitchen",
+  "description": "Standard Test Environment",
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {
+    "symfony": {
+        "shared": {
+          "user": "root",
+          "group": "root"
+        },
+        "sites": {
+            "test": {
+
+            }
+        }
+    }
+  },
+  "override_attributes": {
+
+  }
+}
