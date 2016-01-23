@@ -96,6 +96,8 @@ GEM
     httpclient (2.6.0.1)
     ipaddress (0.8.2)
     json (1.8.3)
+    kitchen-docker (2.3.0)
+      test-kitchen (>= 1.0.0)
     kitchen-vagrant (0.19.0)
       test-kitchen (~> 1.4)
     knife-solo (0.5.1)
@@ -112,7 +114,6 @@ GEM
       rspec-mocks (~> 3.2)
     mixlib-cli (1.5.0)
     mixlib-config (2.2.1)
-    mixlib-install (0.7.1)
     mixlib-log (1.6.0)
     mixlib-shellout (2.2.5-universal-mingw32)
       win32-process (~> 0.8.2)
@@ -211,12 +212,10 @@ GEM
       sfl
     syslog-logger (1.6.8)
     systemu (2.6.5)
-    test-kitchen (1.5.0)
-      chef-config (>= 12.5.1)
-      mixlib-install (~> 0.7)
+    test-kitchen (1.4.2)
       mixlib-shellout (>= 1.2, < 3.0)
       net-scp (~> 1.1)
-      net-ssh (>= 2.9, < 4.0)
+      net-ssh (~> 2.7, < 2.10)
       safe_yaml (~> 1.0)
       thor (~> 0.18)
     thor (0.19.1)
@@ -253,9 +252,10 @@ PLATFORMS
 DEPENDENCIES
   berkshelf (~> 3.1.4)
   chef (~> 12.6.0)
+  kitchen-docker
   kitchen-vagrant
   knife-solo (~> 0.5.1)
-  test-kitchen
+  test-kitchen (~> 1.4.0)
 
 BUNDLED WITH
    1.11.2
